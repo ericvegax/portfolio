@@ -1,3 +1,5 @@
+@import "../util/theme";
+
 /* xs */
 /* @media (min-width: 475px) {} */
 
@@ -22,6 +24,27 @@
   box-sizing: border-box;
 }
 
+body {
+  @include white-gradient-background;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $main-font;
+}
+
+a, p {
+  font-family: $text-font;
+
+  & {
+    text-decoration: none;
+  }
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -30,9 +53,11 @@
   padding-right: 0.5rem;
 }
 
-@mixin flexCenter() {
+@mixin flexCenter($direction, $gap) {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: $direction;
+  gap: $gap;
 }
 

@@ -16,6 +16,26 @@
   box-sizing: border-box;
 }
 
+body {
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pilcrow Rounded", sans-serif;
+}
+
+a, p {
+  font-family: "Hind", sans-serif;
+}
+a, p {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
   margin-left: auto;
@@ -23,5 +43,99 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+/* xs */
+/* @media (min-width: 475px) {} */
+/* sm */
+/* @media (min-width: 640px) {} */
+/* md */
+/* @media (min-width: 768px) {} */
+/* lg */
+/* @media (min-width: 1024px) {} */
+/* xl */
+/* @media (min-width: 1280px) {} */
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pilcrow Rounded", sans-serif;
+}
+
+a, p {
+  font-family: "Hind", sans-serif;
+}
+a, p {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5rem;
+  margin-top: 10rem;
+  height: 60vh;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 6rem;
+  font-weight: 900;
+  max-width: 30ch;
+}
+.hero h2 span {
+  background: linear-gradient(to right, #ff8080, #cc0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.hero a {
+  padding: 2rem 3.5rem;
+  background: black;
+  color: white;
+  font-weight: 800;
+  font-size: 2rem;
+  border-radius: 4rem;
+  transition: transform 0.2s ease-in-out;
+}
+.hero a:hover {
+  transform: scale(1.05);
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+/* sm */
+/* @media (min-width: 640px) {} */
+/* md */
+/* @media (min-width: 768px) {} */
+/* lg */
+/* @media (min-width: 1024px) {} */
+/* xl */
+/* @media (min-width: 1280px) {} */
+/* 2xl */
+/* @media (min-width: 1536px) {} */
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,52 @@
+@import "../util/theme";
+@import "../util/global";
+
+.hero {
+  @include flexCenter(column, 5rem);
+
+  margin-top: 10rem;
+  height: 60vh;
+  text-align: center;
+
+  h2 {
+    font-size: 6rem;
+    font-weight: 900;
+    max-width: 30ch;
+
+    span {
+      @include red-gradient;
+    }
+  }
+
+  a {
+    padding: 2rem 3.5rem;
+    background: black;
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    border-radius: 4rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

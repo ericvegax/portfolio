@@ -1,3 +1,21 @@
+// Colors
 $primaryColor: #AB2328;
+
+// gradients
+@mixin red-gradient {
+  background: linear-gradient(to right, #ff8080, #cc0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin white-gradient-background {
+  background: linear-gradient(to right, #ffffff, #f0f0f0);
+}
+
+// Fonts
+$main-font: 'Pilcrow Rounded', sans-serif;
+$text-font: 'Hind', sans-serif;
 
 
