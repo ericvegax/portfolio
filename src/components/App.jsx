@@ -1,8 +1,9 @@
 import React from "react";
+import Hero from "./Hero.jsx";
 function App() {
     return (
-        <div>
-
+        <div className={"container"}>
+            <Hero title={""} button={""} />
         </div>
     )
 }
