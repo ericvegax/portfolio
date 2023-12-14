@@ -1,4 +1,4 @@
-@import "../util/theme";
+@use "../util/theme";
 
 /* xs */
 /* @media (min-width: 475px) {} */
@@ -25,7 +25,7 @@
 }
 
 body {
-  @include white-gradient-background;
+  @include theme.white-gradient-background;
 }
 
 h1,
@@ -34,11 +34,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $main-font;
+  font-family: theme.$main-font;
 }
 
 a, p {
-  font-family: $text-font;
+  font-family: theme.$text-font;
 
   & {
     text-decoration: none;

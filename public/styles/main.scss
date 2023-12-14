@@ -1,6 +1,6 @@
-@import "./util/global";
-@import "./util/theme";
+@use "./util/global";
+@use "./util/theme";
 
-@import "./components/hero";
-@import "./components/project";
-@import "./components/footer";
+@use "./components/hero";
+@use "./components/project";
+@use "./components/footer";

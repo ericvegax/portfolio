@@ -1,8 +1,8 @@
-@import "../util/theme";
-@import "../util/global";
+@use "../util/theme";
+@use "../util/global";
 
 .hero {
-  @include flexCenter(column, 5rem);
+  @include global.flexCenter(column, 5rem);
 
   margin-top: 10rem;
   height: 60vh;
@@ -14,7 +14,7 @@
     max-width: 30ch;
 
     span {
-      @include red-gradient;
+      @include theme.red-gradient;
     }
   }
 
