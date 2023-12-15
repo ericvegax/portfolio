@@ -3,7 +3,7 @@ import Hero from "./Hero.jsx";
 function App() {
     return (
         <div className={"container"}>
-            <Hero span={"I'm Eric"} title={", a creative web developer with 4 years of inovating life with code."} button={"let's get in touch."} />
+            <Hero span={"I'm Eric"} title={", a Passionate Web Artisan with 3 Years of Crafting Digital Solutions."} button={"let's get in touch."} />
         </div>
     )
 }
