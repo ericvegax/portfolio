@@ -55,7 +55,6 @@ a, p {
   text-align: center;
 }
 .hero h2 {
-  font-size: 6rem;
   font-weight: 900;
   max-width: 30ch;
 }
@@ -78,18 +77,27 @@ a, p {
 .hero a:hover {
   transform: scale(1.05);
 }
-
-/* xs */
-/* @media (min-width: 475px) {} */
-/* sm */
-/* @media (min-width: 640px) {} */
-/* md */
-/* @media (min-width: 768px) {} */
-/* lg */
-/* @media (min-width: 1024px) {} */
-/* xl */
-/* @media (min-width: 1280px) {} */
-/* 2xl */
-/* @media (min-width: 1536px) {} */
+@media (min-width: 375px) {
+  .hero {
+    transform: scale(0.9);
+    font-size: 2rem;
+  }
+}
+@media (min-width: 640px) {
+  .hero {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    font-size: 5rem;
+    transform: scale(1);
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

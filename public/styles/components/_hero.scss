@@ -1,20 +1,18 @@
-@use "../util/theme";
-@use "../util/global";
+@use "../util/util";
 
 .hero {
-  @include global.flexCenter(column, 5rem);
+  @include util.flexCenter(column, 5rem);
 
   margin-top: 10rem;
   height: 60vh;
   text-align: center;
 
   h2 {
-    font-size: 6rem;
     font-weight: 900;
     max-width: 30ch;
 
     span {
-      @include theme.red-gradient;
+      @include util.red-gradient;
     }
   }
 
@@ -31,22 +29,26 @@
       transform: scale(1.05);
     }
   }
+
+  // extra small
+  @media (min-width: 375px) {
+    transform: scale(0.9);
+    font-size: 2rem;
+  }
+
+  // small
+  @media (min-width: 640px) {
+    font-size: 3rem;
+  }
+
+  // medium
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+
+  // large
+  @media (min-width: 1024px) {
+    font-size: 5rem;
+    transform: scale(1.0);
+  }
 }
-
-/* xs */
-/* @media (min-width: 475px) {} */
-
-/* sm */
-/* @media (min-width: 640px) {} */
-
-/* md */
-/* @media (min-width: 768px) {} */
-
-/* lg */
-/* @media (min-width: 1024px) {} */
-
-/* xl */
-/* @media (min-width: 1280px) {} */
-
-/* 2xl */
-/* @media (min-width: 1536px) {} */
