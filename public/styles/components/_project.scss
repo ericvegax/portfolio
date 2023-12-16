@@ -2,12 +2,56 @@
 
 .project__section {
   @include util.flexCenter(column, 1rem);
+
+  /* xs */
+  @media (min-width: 475px) {
+    transform: scale(0.7);
+  }
+
+  /* sm */
+  /* @media (min-width: 640px) {} */
+
+  /* md */
+  //@media (min-width: 768px) {}
+
+  /* lg */
+  @media (min-width: 1024px) {
+    transform: scale(0.8);
+  }
+
+  /* xl */
+  @media (min-width: 1280px) {
+    transform: scale(1.0);
+  }
+
+  /* 2xl */
+  /* @media (min-width: 1536px) {} */
 }
 
 .project__wrapper {
-  @include util.flexCenter(row, 2rem);
-
   height: 50vh;
+
+  /* xs */
+  @media (min-width: 475px) {
+    @include util.flexCenter(column, 2rem);
+  }
+
+  /* sm */
+  /* @media (min-width: 640px) {} */
+
+  /* md */
+  //@media (min-width: 768px) {}
+
+  /* lg */
+  @media (min-width: 1024px) {}
+
+  /* xl */
+  @media (min-width: 1280px) {
+    @include util.flexCenter(row, 2rem);
+  }
+
+  /* 2xl */
+  /* @media (min-width: 1536px) {} */
 }
 
 .project__card {
@@ -25,10 +69,6 @@
     text-align: left;
     color: black;
     font-size: 1.2rem;
-  }
-
-  .project__title {
-    font-weight: 800;
   }
 
   .project__description {

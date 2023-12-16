@@ -7,15 +7,21 @@ import getWebScreenshot from "../util/flash.js";
 function App() {
     return (
         <div className={"container"}>
+            {/* start of development flag */}
             <div className={"development__flag"}>
                 <p className={"development__flag-desc"}>Currently under <span>development</span></p>
             </div>
+            {/* end of development flag */}
 
             <Hero span={"I'm Eric"} title={", a Passionate Web Artisan Crafting Digital Solutions."}
                   button={"let's get in touch."}/>
 
-            <div className={"project__section"}>
+            <div className={"container section__title__wrapper"}>
                 <h2 className={"section__title"}>My Projects.</h2>
+            </div>
+
+            <div className={"container project__section"}>
+
                 <div className={"container project__wrapper"}>
 
                     <ProjectCard title={"Simon"}
@@ -34,7 +40,8 @@ function App() {
                                  link={"https://github.com/ericvegax/TinDog"}/>
                 </div>
             </div>
-            <Footer/>
+
+            <Footer />
         </div>
     )
 }

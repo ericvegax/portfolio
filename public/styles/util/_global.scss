@@ -18,6 +18,9 @@
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
+/**
+  Start of development flag
+ */
 .development__flag {
   position: fixed;
   text-align: center;
@@ -37,6 +40,10 @@
     color: theme.$primaryColor;
   }
 }
+
+/**
+  End of development flag
+ */
 
 * {
   padding: 0;
@@ -74,6 +81,35 @@ a, p {
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.section__title__wrapper {
+  display: flex;
+  justify-content: center;
+
+  /* xs */
+  @media (min-width: 475px) {
+    margin-bottom: 20rem;
+  }
+
+  /* sm */
+  /* @media (min-width: 640px) {} */
+
+  /* md */
+  /* @media (min-width: 768px) {} */
+
+  /* lg */
+  @media (min-width: 1024px) {
+
+  }
+
+  /* xl */
+  @media (min-width: 1280px) {
+    margin-bottom: 5rem;
+  }
+
+  /* 2xl */
+  /* @media (min-width: 1536px) {} */
 }
 
 .section__title {
