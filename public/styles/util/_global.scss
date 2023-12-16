@@ -22,10 +22,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  @include theme.white-gradient-background;
+  background: linear-gradient(147deg, #EEEAFF 0%, #C3B4FF 100%) no-repeat fixed,
+  linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+  background-blend-mode: overlay;
 }
 
 h1,
@@ -53,11 +56,28 @@ a, p {
   padding-right: 0.5rem;
 }
 
+.section__title {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
 @mixin flexCenter($direction, $gap) {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: $direction;
   gap: $gap;
+}
+
+@mixin flexSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flexFlexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 

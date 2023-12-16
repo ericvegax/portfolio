@@ -4,14 +4,14 @@ function Hero(props) {
         return (
             <div className={"container hero"}>
                 <h2>{props.title}</h2>
-                <a href={"#"}>{props.button}</a>
+                <a href={"#contact"}>{props.button}</a>
             </div>
         );
     } else {
         return (
             <div className={"container hero"}>
                 <h2><span>{props.span}</span> {props.title}</h2>
-                <a href={"#"}>{props.button}</a>
+                <a href={"#contact"}>{props.button}</a>
             </div>
         );
     }

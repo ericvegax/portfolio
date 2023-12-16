@@ -1,0 +1,47 @@
+@use "../util/util";
+
+.project__section {
+  @include util.flexCenter(column, 1rem);
+}
+
+.project__wrapper {
+  @include util.flexCenter(row, 2rem);
+
+  height: 50vh;
+}
+
+.project__card {
+  @include util.flexCenter(column, 1rem);
+
+  display: inline-block;
+
+  background: rgba(255,255,255,.2);
+  box-shadow: 0 0 40px #00000026;
+  border-radius: 2rem;
+  padding: 1rem;
+
+  .project__text {
+    margin-top: 1rem;
+    text-align: left;
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .project__title {
+    font-weight: 800;
+  }
+
+  .project__description {
+  }
+
+  .project__link {
+    font-size: 3rem;
+    color: black;
+  }
+
+  .project__img {
+    height: 300px;
+    border-radius: 1rem;
+    object-fit: cover;
+  }
+}

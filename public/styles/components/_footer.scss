@@ -1,0 +1,51 @@
+@use "../util/util";
+
+.footer__wrapper {
+  min-height: 15vh;
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+
+  .footer__item {
+    padding: 0.5rem 4rem;
+    //background: util.$secondaryColor;
+    background: rgba(255,255,255,.2);
+    box-shadow: 0 0 40px #00000026;
+    border-radius: 2rem;
+    color: black;
+    font-size: 3rem;
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+
+    span {
+      @include util.flexCenter(column, 1rem);
+      font-size: 2rem;
+      font-weight: 800;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  /* xs */
+  @media (min-width: 375px) {
+    @include util.flexCenter(column, 2rem);
+  }
+
+  /* sm */
+  /* @media (min-width: 640px) {} */
+
+  /* md */
+  @media (min-width: 768px) {
+    @include util.flexCenter(row, 2rem);
+  }
+
+  /* lg */
+  /* @media (min-width: 1024px) {} */
+
+  /* xl */
+  /* @media (min-width: 1280px) {} */
+
+  /* 2xl */
+  /* @media (min-width: 1536px) {} */
+}
