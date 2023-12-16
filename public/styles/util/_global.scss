@@ -18,6 +18,26 @@
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
+.development__flag {
+  position: fixed;
+  text-align: center;
+  height: 5vh;
+  width: 100vw;
+  margin-top: 1rem;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+.development__flag-desc {
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
+
+  span {
+    color: theme.$primaryColor;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

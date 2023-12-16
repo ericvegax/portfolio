@@ -7,6 +7,10 @@ import getWebScreenshot from "../util/flash.js";
 function App() {
     return (
         <div className={"container"}>
+            <div className={"development__flag"}>
+                <p className={"development__flag-desc"}>Currently under <span>development</span></p>
+            </div>
+
             <Hero span={"I'm Eric"} title={", a Passionate Web Artisan Crafting Digital Solutions."}
                   button={"let's get in touch."}/>
 
