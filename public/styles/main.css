@@ -10,31 +10,6 @@
 /* @media (min-width: 1280px) {} */
 /* 2xl */
 /* @media (min-width: 1536px) {} */
-/**
-  Start of development flag
- */
-.development__flag {
-  position: fixed;
-  text-align: center;
-  height: 5vh;
-  width: 100vw;
-  margin-top: 1rem;
-  background-color: black;
-  border-radius: 1rem;
-}
-
-.development__flag-desc {
-  font-weight: 800;
-  font-size: 2rem;
-  color: white;
-}
-.development__flag-desc span {
-  color: #AB2328;
-}
-
-/**
-  End of development flag
- */
 * {
   padding: 0;
   margin: 0;
@@ -78,7 +53,7 @@ a, p {
 }
 @media (min-width: 475px) {
   .container {
-    max-width: 100%;
+    max-width: 475px;
   }
 }
 @media (min-width: 640px) {
