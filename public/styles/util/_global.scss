@@ -91,7 +91,7 @@ a, p {
   justify-content: center;
 
   /* xs */
-  @media (min-width: 475px) {
+  @media (min-width: 375px) {
     margin-bottom: 20rem;
   }
 
@@ -102,9 +102,7 @@ a, p {
   /* @media (min-width: 768px) {} */
 
   /* lg */
-  @media (min-width: 1024px) {
-
-  }
+  /* @media (min-width: 1024px) {} */
 
   /* xl */
   @media (min-width: 1280px) {
