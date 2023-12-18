@@ -32,7 +32,7 @@
   height: 50vh;
 
   /* xs */
-  @media (min-width: 375px) {
+  @media only screen and (min-width: 375px) {
     @include util.flexCenter(column, 2rem);
   }
 
@@ -43,10 +43,10 @@
   //@media (min-width: 768px) {}
 
   /* lg */
-  @media (min-width: 1024px) {}
+  //@media (min-width: 1024px) {}
 
   /* xl */
-  @media (min-width: 1280px) {
+  @media only screen and (min-width: 1280px) {
     @include util.flexCenter(row, 2rem);
   }
 

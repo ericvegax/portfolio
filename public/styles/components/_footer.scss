@@ -27,7 +27,7 @@
   }
 
   /* xs */
-  @media (min-width: 375px) {
+  @media only screen and (min-width: 375px) {
     @include util.flexCenter(column, 2rem);
     margin-top: 20rem;
   }
@@ -36,17 +36,17 @@
   /* @media (min-width: 640px) {} */
 
   /* md */
-  @media (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
     @include util.flexCenter(row, 2rem);
   }
 
   /* lg */
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 1024px) {
     margin-top: 25rem;
   }
 
   /* xl */
-  @media (min-width: 1280px) {
+  @media only screen and (min-width: 1280px) {
     margin-top: 10rem;
   }
 
