@@ -11,4 +11,5 @@ function ProjectCard(props) {
         </a>
     );
 }
+
 export default ProjectCard;

@@ -1,4 +1,5 @@
 import React from "react";
+
 function Footer(props) {
     return (
         <div className={"container footer__wrapper"} id={"contact"}>
@@ -8,4 +9,5 @@ function Footer(props) {
         </div>
     )
 }
+
 export default Footer;
