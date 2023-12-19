@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "./Hero.jsx";
-import ProjectCard from "./ProjectCard.jsx";
+import ProjectCard, {createProjectCard, getProjects} from "./ProjectCard.jsx";
 import Footer from "./Footer.jsx";
 import getWebScreenshot from "../util/flash.js";
 
@@ -17,21 +17,7 @@ function App() {
             <div className={"container project__section"}>
 
                 <div className={"container project__wrapper"}>
-
-                    <ProjectCard title={"Simon"}
-                                 imageSrc={getWebScreenshot("https://simon-game-showcase.vercel.app/")}
-                                 description={"HTML, CSS, JQuery"}
-                                 link={"https://github.com/ericvegax/simon"}/>
-
-                    <ProjectCard title={"Portfolio"}
-                                 imageSrc={getWebScreenshot("https://www.ericvega.dev")}
-                                 description={"React & Sass"}
-                                 link={"https://github.com/ericvegax/portfolio"}/>
-
-                    <ProjectCard title={"TinDog"}
-                                 imageSrc={getWebScreenshot("https://tindog-showcase.vercel.app/")}
-                                 description={"Bootstrap"}
-                                 link={"https://github.com/ericvegax/TinDog"}/>
+                    {getProjects().map(createProjectCard)}
                 </div>
             </div>
 

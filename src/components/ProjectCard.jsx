@@ -1,4 +1,5 @@
 import React from "react";
+import getWebScreenshot from "../util/flash.js";
 
 function ProjectCard(props) {
     return (
@@ -12,4 +13,41 @@ function ProjectCard(props) {
     );
 }
 
+function createProjectCard(project) {
+    return (<ProjectCard key={project.id} title={project.title} imageSrc={project.imageSrc} description={project.description} />)
+}
+
+function getProjects() {
+    return projects;
+}
+
+const projects = [
+    {
+        id: 1,
+        title: "Simon",
+        imageSrc: getWebScreenshot("https://simon-game-showcase.vercel.app/"),
+        description: "HTML, CSS, JQuery",
+        link: "https://github.com/ericvegax/simon"
+    },
+    {
+        id: 2,
+        title: "Portfolio",
+        imageSrc: getWebScreenshot("https://www.ericvega.dev"),
+        description: "React & Sass",
+        link: "https://github.com/ericvegax/portfolio"
+    },
+    {
+        id: 3,
+        title: "TinDog",
+        imageSrc: getWebScreenshot("https://tindog-showcase.vercel.app/"),
+        description: "Bootstrap",
+        link: "https://github.com/ericvegax/TinDog"
+    }
+];
+
 export default ProjectCard;
+
+export {
+    createProjectCard,
+    getProjects
+}
