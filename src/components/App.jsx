@@ -1,8 +1,7 @@
 import React from "react";
 import Hero from "./Hero.jsx";
-import ProjectCard, {createProjectCard, getProjects} from "./ProjectCard.jsx";
+import {createProjectCard, getProjects} from "./ProjectCard.jsx";
 import Footer from "./Footer.jsx";
-import getWebScreenshot from "../util/flash.js";
 
 function App() {
     return (
