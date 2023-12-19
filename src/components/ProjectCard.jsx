@@ -14,7 +14,7 @@ function ProjectCard(props) {
 }
 
 function createProjectCard(project) {
-    return (<ProjectCard key={project.id} title={project.title} imageSrc={project.imageSrc} description={project.description} />)
+    return (<ProjectCard key={project.id} title={project.title} imageSrc={project.imageSrc} description={project.description} link={project.link} />)
 }
 
 function getProjects() {
