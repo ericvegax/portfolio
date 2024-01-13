@@ -32,7 +32,7 @@ const projects = [
     {
         id: 2,
         title: "Portfolio",
-        imageSrc: getWebScreenshot("https://www.ericvega.dev"),
+        imageSrc: getWebScreenshot("https://portfolio-noxcodes.vercel.app/"),
         description: "React & Sass",
         link: "https://github.com/ericvegax/portfolio"
     },

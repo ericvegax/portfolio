@@ -14,7 +14,6 @@ function App() {
             </div>
 
             <div className={"container project__section"}>
-
                 <div className={"container project__wrapper"}>
                     {getProjects().map(createProjectCard)}
                 </div>
